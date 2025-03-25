@@ -4,6 +4,7 @@ const secondsEl = document.getElementById('seconds');
 const startBtn = document.getElementById('start-btn');
 const pauseBtn = document.getElementById('pause-btn');
 const resetBtn = document.getElementById('reset-btn');
+const addFiveBtn = document.getElementById('add-five-btn');
 const workBtn = document.getElementById('pomodoro-btn');
 const shortBreakBtn = document.getElementById('short-break-btn');
 const longBreakBtn = document.getElementById('long-break-btn');
@@ -191,6 +192,15 @@ function requestNotificationPermission() {
     }
 }
 
+// Function to add 5 minutes to the timer
+function addFiveMinutes() {
+    // Add 5 minutes (300 seconds) to the timer
+    timeLeft += 300;
+    
+    // Update display
+    updateDisplay();
+}
+
 // Event listeners
 startBtn.addEventListener('click', startTimer);
 pauseBtn.addEventListener('click', pauseTimer);
@@ -198,6 +208,7 @@ resetBtn.addEventListener('click', resetTimer);
 workBtn.addEventListener('click', () => setTimerMode('pomodoro'));
 shortBreakBtn.addEventListener('click', () => setTimerMode('shortBreak'));
 longBreakBtn.addEventListener('click', () => setTimerMode('longBreak'));
+addFiveBtn.addEventListener('click', addFiveMinutes);
 
 // Initialize
 window.addEventListener('DOMContentLoaded', () => {

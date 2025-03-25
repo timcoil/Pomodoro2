@@ -66,6 +66,11 @@ button {
     color: white;
 }
 
+#add-five-btn {
+    background-color: #3498db;
+    color: white;
+}
+
 button:disabled {
     opacity: 0.5;
     cursor: not-allowed;
