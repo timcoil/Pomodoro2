@@ -52,17 +52,17 @@ button {
 }
 
 #start-btn {
-    background-color: #ff9800;
+    background-color: #4CAF50;
     color: white;
 }
 
 #pause-btn {
-    background-color: #ff9800;
+    background-color: #4CAF50;
     color: white;
 }
 
 #reset-btn {
-    background-color: #ff9800;
+    background-color: #4CAF50;
     color: white;
 }
 
@@ -72,12 +72,12 @@ button:disabled {
 }
 
 .timer-mode button, .timer-toggle button {
-    background-color: #ffe0b2;
+    background-color: #E8F5E9;
     color: #333;
 }
 
 .timer-mode button.active, .timer-toggle button.active {
-    background-color: #ff9800;
+    background-color: #4CAF50;
     color: white;
 }
 
