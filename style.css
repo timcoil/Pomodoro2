@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+}
+
+.container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 500px;
+    width: 90%;
+}
+
+h1 {
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.timer-display {
+    font-size: 5rem;
+    font-weight: bold;
+    margin: 1.5rem 0;
+    color: #e74c3c;
+}
+
+.timer-controls, .timer-mode, .timer-toggle {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+button {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+#start-btn {
+    background-color: #ff9800;
+    color: white;
+}
+
+#pause-btn {
+    background-color: #ff9800;
+    color: white;
+}
+
+#reset-btn {
+    background-color: #ff9800;
+    color: white;
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.timer-mode button, .timer-toggle button {
+    background-color: #ffe0b2;
+    color: #333;
+}
+
+.timer-mode button.active, .timer-toggle button.active {
+    background-color: #ff9800;
+    color: white;
+}
+
+.timer-count {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+#pomodoro-count {
+    font-weight: bold;
+    color: #3498db;
+} 
